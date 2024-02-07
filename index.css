@@ -31,6 +31,17 @@ body{
     color: var(--text-color);
     box-shadow: none;
 }
+.animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 header{
     position: fixed;
     width: 100%;
@@ -541,7 +552,6 @@ span{
 
 .slideinleft{
     animation: slideinleft 0.5s ease-in-out;
-    /* opacity: 0; */
 }
 @keyframes slideinleft{
     from{

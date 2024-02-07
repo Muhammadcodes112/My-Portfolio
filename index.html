@@ -236,17 +236,14 @@
 
 
 
-  
+    <script src="script.js"></script>
+
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script>
-        hamburger = document.querySelector(".hamburger");
-        hamburger.onclick = function(){
-            navBar = document.querySelector(".nav-bar");
-            navBar.classList.toggle("active");
-        }
-    </script>
+ 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
     <script>
+        // code for typed js        
         var typed = new Typed(".multiple-text", {
             strings: ["Software Engineer", "FullStack Developer", "Content Creator"],
             typeSpeed: 100,
@@ -254,37 +251,6 @@
             backDelay: 1000,
             loop: true
         })
-
-        // code for floating button
-      document.addEventListener('DOMContentLoaded', function() {
-        var button = document.getElementById('floatingbtn');
-        window.addEventListener('scroll', function() {
-            var scrollPosition = window.scrollY;
-
-            if (scrollPosition < 20) {
-                button.style.opacity = '1';
-            }else{
-                button.style.opacity = '0';
-            }});
-      });
-
-
-      // animate on scroll
-    const boxes = document.querySelectorAll('.animate')
-            window.addEventListener('scroll', checkBoxes)
-            checkBoxes()
-            function checkBoxes(){
-                const triggerBottom = window.innerHeight / 5 * 5
-                boxes.forEach(box => {
-                    const boxTop = box.getBoundingClientRect().top
-                    if(boxTop < triggerBottom){
-                        box.classList.add('show')
-                    } else{
-                        box.classList.remove('show')
-                    }
-                })
-            }   
-
     </script>
 
 </body>
